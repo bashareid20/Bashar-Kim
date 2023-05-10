@@ -1,0 +1,86 @@
+.menu{
+  
+    border-radius: 50px;
+       Border: 3px solid black;
+   }
+  
+   .ust{
+    background-color:#0c0a0a;
+    color:#660066;
+    height:80px;
+    padding:5px;
+    }
+    .ortaust{
+    background-color:#eeeeee;
+    color:#660066;
+    height:180px;
+    padding:5px;
+    text-align:center;
+    }
+    .ortaaltsol
+{
+background-color:#b3d9ff;
+color:#660066;
+width:30%;
+height:180px;
+padding:1%;
+float:left;
+}
+.ortabosluk
+{
+width:2%;
+height:200px;
+float:left;
+}
+.alt{
+background-color:#ffcccc;
+}
+.ust{
+    background-color:#63679c;
+    color:#660066;
+    height:80px;
+    padding:5px;
+    }
+    .ustara
+    {
+    background-color:#812626;
+    color:#660066;
+    width:70%;
+    padding:1%;
+    float:left;
+    }
+    .ustbosluk
+    {
+    width:2%;
+    float:left;
+    }
+    
+    .ortaaltsol
+    {
+    background-color:#b3d9ff;
+    color:#660066;
+    padding:1%;
+    float:left;
+    }
+    .ustalt
+    {
+    background-color:#0b00a3;
+    color:#660066;
+    padding:2px;
+    float:left;
+    width:60%;
+    }
+    .altmenu
+    {
+    background-color:#9e0638;
+    }
+  
+    .sifirla{clear:both;}
+    .bosluk{
+    width:100%;
+    height:10px;
+    }
+    .input
+    {
+    width:300px;
+    }
