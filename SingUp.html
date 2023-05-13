@@ -7,13 +7,13 @@
     <title>Kayıt Ol</title>
 </head>
 <body>
-    <form action="BilgiAl.php" method="post">
+    <form action="BilgiAl.php" method="post" id="myForm" onsubmit="return validateForm()">
     <table>
         <tr>
             <td> <label for="adi">Adı</label> </td>
             <td> <input type="text" id="adi" name="adi"> </td>   
             <script>
-                if(adi==""){
+                if(adi == ""){
                     alert("Lütfen Adınızı Yazınız")
                         return false;
                 }
