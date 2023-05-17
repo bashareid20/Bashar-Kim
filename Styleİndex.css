@@ -1,86 +1,113 @@
-.menu{
-  
+/* MENÜ STİLİ */
+.menu {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
     border-radius: 50px;
-       Border: 3px solid black;
-   }
-  
-   .ust{
-    background-color:#0c0a0a;
-    color:#660066;
-    height:80px;
-    padding:5px;
-    }
-    .ortaust{
-    background-color:#eeeeee;
-    color:#660066;
-    height:180px;
-    padding:5px;
-    text-align:center;
-    }
-    .ortaaltsol
-{
-background-color:#b3d9ff;
-color:#660066;
-width:30%;
-height:180px;
-padding:1%;
-float:left;
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
 }
-.ortabosluk
-{
-width:2%;
-height:200px;
-float:left;
+
+.menu:hover {
+    background-color: crimson;
+    color: white;
 }
-.alt{
-background-color:#ffcccc;
-}
-.ust{
-    background-color:#63679c;
-    color:#660066;
-    height:80px;
-    padding:5px;
-    }
-    .ustara
-    {
-    background-color:#812626;
-    color:#660066;
-    width:70%;
-    padding:1%;
-    float:left;
-    }
-    .ustbosluk
-    {
-    width:2%;
-    float:left;
-    }
+
+/* ÜST KISIM STİLİ */
+.ust {
+    background-color: #63679c;
+    color: #fff;
+    height: 80px;
+    padding: 5px;
     
-    .ortaaltsol
-    {
-    background-color:#b3d9ff;
-    color:#660066;
-    padding:1%;
-    float:left;
-    }
-    .ustalt
-    {
-    background-color:#0b00a3;
-    color:#660066;
-    padding:2px;
-    float:left;
-    width:60%;
-    }
-    .altmenu
-    {
-    background-color:#9e0638;
-    }
-  
-    .sifirla{clear:both;}
-    .bosluk{
-    width:100%;
-    height:10px;
-    }
-    .input
-    {
-    width:300px;
-    }
+}
+
+.ustara {
+    background-color: #812626;
+    color: #fff;
+    width: 70%;
+    padding: 1%;
+    float: left;
+}
+
+.ustbosluk {
+    width: 2%;
+    float: left;
+    
+}
+
+/* ORTA KISIM STİLİ */
+.ortaust {
+    background-color: #eeeeee;
+    color: #660066;
+    padding: 5px;
+    text-align: center;
+}
+
+.sekmeler {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.sekmeler-icerik {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(10px); }
+}
+
+.sekmeler-icerik:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.sekmeler-icerik img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ALT KISIM STİLİ */
+.alt {
+    background-color: #ffcccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.alt-icerik {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* GENEL STİLLER */
+.sifirla {
+    clear: both;
+}
+
+.bosluk {
+    width: 100%;
+    height: 10px;
+}
+
+.input {
+    width: 300px;
+}

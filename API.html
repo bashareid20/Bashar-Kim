@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Örneği</title>
+  <a href="<a href="https://api.themoviedb.org/3/search/movie?api_key={f3896f07f041fbf6b8ec9e6eb240c8f7}&query={Dizi}">API İsteği Yap</a>
+  >API İsteği Yap</a>
+
+  <script>
+    function fetchData() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://api.themoviedb.org/3/movie/550?api_key=f3896f07f041fbf6b8ec9e6eb240c8f7', true);
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          var data = JSON.parse(xhr.responseText);
+          // API'den alınan verileri kullanarak HTML içeriği oluşturun
+          var html = '<ul>';
+          for (var i = 0; i < data.length; i++) {
+            html += '<li>' + data[i].title + '</li>';
+          }
+          html += '</ul>';
+
+          // HTML sayfasındaki bir elemente verileri yerleştirin
+          document.getElementById('apiData').innerHTML = html;
+        }
+      };
+      xhr.send();
+    }
+  </script>
+</head>
+<body>
+  <h1>API Örneği</h1>
+  <button onclick="fetchData()">Verileri Getir</button>
+  <div id="apiData"></div>
+</body>
+</html>

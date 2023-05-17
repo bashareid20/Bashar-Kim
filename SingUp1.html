@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+</head>
+<body>
+    <form action="BilgiAl.php" method="post">
+    <table>
+        <tr>
+            <td> <label for="adi">Adı</label> </td>
+            <td> <input type="text" id="adi" name="adi"> </td>   
+            <script>
+                if(adi==""){
+                    alert("Lütfen Adınızı Yazınız")
+                        return false;
+                }
+            </script>
+        </tr>
+        <tr>
+            <td><label for="soyadi">Soyadı</label> </td>
+            <td><input type="text" id="soyadi" name="soyadi"></td>
+        </tr>
+        <tr>
+            <td><label for="yas">Doğum Tarihi</label> </td>
+            <td><input type="date" id="yas" name="yas" min="14" max="96"></td>
+        </tr>
+        <tr>
+            <td><label for="Gmail">Gmail</label> </td>
+            <td><input type="email" id="Gmail" name="Gmail"></td>
+        </tr>
+        <tr>
+            <td><label for="Gmail">Gmail</label> </td>
+            <td><input type="email" id="Gmail" name="Gmail"></td>
+        </tr>
+        <tr>
+            <td><label for="Gmail">Gmail</label> </td>
+            <td><input type="email" id="Gmail" name="Gmail"></td>
+        </tr>
+       
+        <tr>
+           <td><input type="submit" value="Kayıt işlemi Tamamla" ></td>
+        </tr>
+       
+    </form>
+            
+                 
+
+            
+          
+
+
+
+  
+
+
+
+
+    </table>
+    
+   
+</body>
+</html>

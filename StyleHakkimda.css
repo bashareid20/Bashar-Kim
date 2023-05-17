@@ -1,10 +1,76 @@
-.kisisel{
-
-    border: 5px solid black; 
-    }
-    .menu{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
   
-        border-radius: 50px;
-           Border: 3px solid black;
-       }
-      
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  ul, ol {
+    padding-left: 20px;
+  }
+  
+  .menu-bar {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .menu {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .menu:hover {
+    background-color: #555;
+  }
+  
+  .film-listesi {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .film-listesi li {
+    margin-bottom: 10px;
+  }
+  
+  .film-arama {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #film-ara-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  #film-ara-buton {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

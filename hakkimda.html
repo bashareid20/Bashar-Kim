@@ -8,46 +8,73 @@
     <link rel="stylesheet" href="StyleHakkimda.css">
 </head>
 <body>
-    <div class="kisisel">
-        <h1  >Kişisel Bilgilerim </h1>
-           <ul  >
-<li>Bashar EID</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-           </ul>
+    <div class="container">
+        <h1>Kişisel Bilgilerim</h1>
+        <ul>
+            <li>Bashar EID</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
 
+        <h2>Gezdiğim Şehirler</h2>
+        <ol type="I">
+            <li>İstanbul</li>
+            <li>Gaziantep</li>
+            <li>Yalova</li>
+            <li>Adana</li>
+            <li>Mersin</li>
+            <li>AfykaraHisar</li>
+        </ol>
 
-    </div  class="kisisel">
-    <div>
-  <h2>Gezdiğim Şehirler</h2>
-     <ol type="I">
-    <li>İstanbul </li>
-    <li>Gaziantep</li>
-    <li>Yalova</li>
-    <li>Adana</li>
-    <li>Mersin</li>
-    <li>AfykaraHisar</li>
-
-     </ol>
-
-
+        <h1>Hobilerim</h1>
+        <ul>
+            <li>Yüzmek</li>
+            <li>Basketbol Oynamak</li>
+            <li>Masa Tenisi Oynamak</li>
+            <li>Doğa Yürüyüşü</li>
+            <li>Bisikletle Gezmek</li>
+            <li>Bisikletle Gezmek</li>
+        </ul>
+        
+        <h1>Sevdiğim Yemekler</h1>
+        <ul>
+            <li>İçli Köfte</li>
+            <li>Biber Dolması</li>
+            <li>Karnıyarık</li>
+        </ul>
+        
+        <h1>Sevdiğim Filmler</h1>
+        <ul class="film-listesi"></ul>
+        
+        <div class="film-arama">
+            <input type="text" id="film-ara-input" placeholder="Film ara...">
+            <button id="film-ara-buton">Ara</button>
+        </div>
+        
     </div>
-    <div>
-        <h1>Hopilerim</h1>
-            <ul>
-                <li>Yüzmek</li>
-                <li>Basketbul Oynamak</li>
-                <li>Masa tenes Oynamak</li>
-                <li>Doğa Yürüşü </li>
-                <li>Biskiletle Gezmek</li>
-                <li>Biskiletle Gezmek</li>
-               
-            </ul>
 
-    </div>
-    <p class="menu2"><a href="index.html" class="menu">Anasayfaya Dön</a>  <a class="menu" href="sehrim.html">Şehrim</a> <a class="menu" href="CV.html" >CV(ÖZ Geçmişim) </a></p>
+    <table class="menu-bar">
+        <tr>
+            <td>
+                <p class="menu2">
+                    <a href="index.html" class="menu">Anasayfaya Dön</a>
+                </p>
+            </td>
+            <td>
+                <a class="menu" href="sehrim.html">ŞEHRİM</a>
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                <a class="menu" href="hakkimda.html">Hakkımda</a>
+            </td>
+        </tr>
+    </table>
+    
+    <script src="HakkimdaApı.js"></script>
 </body>
 </html>

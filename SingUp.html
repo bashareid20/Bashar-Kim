@@ -5,49 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="StyleSingUp.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Kayıt Ol</h1>
+        <form action="BilgiAl.php" method="post">
+            <label for="adi">Adı</label>
+            <input type="text" id="adi" name="adi" required>
+
+            <label for="soyadi">Soyadı</label>
+            <input type="text" id="soyadi" name="soyadi" required>
+
+            <label for="yas">Doğum Tarihi</label>
+            <input type="date" id="yas" name="yas" min="1900-01-01" max="2007-12-31" required>
+
+            <label for="Gmail">Gmail</label>
+            <input type="email" id="Gmail" name="Gmail" required>
+
+            <input type="submit" value="Kayıt İşlemini Tamamla">
+        </form>
+    </div>
     <table>
         <tr>
-            <td> <label for="adi">Adı</label> </td>
-            <td> <input type="text" id="adi" name="adi"> </td>   
+          <td>
+            <p class="menu2">
+              <a href="index.html" class="menu">Anasayfaya Dön</a>
+            </p>
+          </td>
+          <td>
+            <a class="menu" href="sehrim.html">ŞEHRİM</a>
+          </td>
+          <td>
+           
+          </td>
+           <td>
+            <a class="menu" href="hakkimda.html">Hakkımda</a>
+           </td>
         </tr>
-        <tr>
-            <td><label for="soyadi">Soyadı</label> </td>
-            <td><input type="text" id="soyadi" name="soyadi"></td>
-        </tr>
-        <tr>
-            <td><label for="yas">yaş</label> </td>
-            <td><input type="date" id="yas" name="yas" min="14" max="96"></td>
-        </tr>
-        <tr>
-            <td><label for="Gmail">Gmail</label> </td>
-            <td><input type="email" id="Gmail" name="Gmail"></td>
-        </tr>
-        <tr>
-            <td><label for="Gmail">Gmail</label> </td>
-            <td><input type="email" id="Gmail" name="Gmail"></td>
-        </tr>
-        <tr>
-            <td><label for="Gmail">Gmail</label> </td>
-            <td><input type="email" id="Gmail" name="Gmail"></td>
-        </tr>
-       
-            
-                 
-
-            
-          
-
-
-
-  
-
-
-
-
-    </table>
-    
+      </table>
    
 </body>
 </html>

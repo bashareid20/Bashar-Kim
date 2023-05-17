@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="StyleLogoin.css">
 </head>
 <body>
-    <form action="BilgileiAl"  >
+    <div class="container">
+        <h1>Giriş Yap</h1>
+        <form action="LogoinBilgiAl.php" method="post">
+            <label for="KullaniciAdi">Kullanıcı Adı</label>
+            <input type="text" id="KullaniciAdi" name="kullanici_Adi" placeholder="G221111111@sakarya.edu.tr">
 
-<label for="KullancıAdı" class="input">Kullancı Adı</label>
-        <input type="text" id="KullancıAdı" name="KullancıAdı">
-        <br>
-        <hr>
-<label for="KullancıAdı" class="input">Şifre</label>
-        <input type="password" id="sifre" name="sifre">
+            <label for="sifre">Şifre</label>
+            <input type="password" id="sifre" name="sifre" placeholder="Şifre">
 
-
-
-        
-    </form>
+            <input type="submit" value="Giriş Yap">
+        </form>
+    </div>
+<
+    <p style="text-align: center;">
+        <a href="index.html" class="menu">Anasayfaya Dön</a>
+        <a href="" class="menu">Şehrim</a>
+        <a href="hakkimda.html" class="menu">Hakkımda</a>
+    </p>
     
 </body>
 </html>
