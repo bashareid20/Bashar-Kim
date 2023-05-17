@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kayıt Ol</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="StyleSingUp.css">
 </head>
 <body>
@@ -44,6 +45,68 @@
            </td>
         </tr>
       </table>
+=======
+    <link rel="stylesheet" href="SingUp.css">
+</head>
+<body>
+    <form action="BilgiAl.php" method="post" id="myForm" onsubmit="return validateForm()">
+    <table>
+        <tr>
+            <td> <label for="adi">Adı</label> </td>
+            <td> <input type="text" id="adi" name="adi"> </td>   
+            <script>
+                if(adi == ""){
+                    alert("Lütfen Adınızı Yazınız")
+                        return false;
+                }
+            </script>
+        </tr>
+        <tr>
+            <td><label for="soyadi">Soyadı</label> </td>
+            <td><input type="text" id="soyadi" name="soyadi"></td>
+        </tr>
+        <tr>
+            <td><label for="yas">Doğum Tarihi</label> </td>
+            <td><input type="date" id="yas" name="yas" min="14" max="96"></td>
+        </tr>
+        <tr>
+            <td><label for="Gmail">Gmail</label> </td>
+            <td><input type="email" id="Gmail" name="Gmail"></td>
+        </tr>
+        <tr>
+            <td><label for="Gmail">Gmail</label> </td>
+            <td><input type="email" id="Gmail" name="Gmail"></td>
+        </tr>
+        <tr>
+            <td><label for="Gmail">Gmail</label> </td>
+            <td><input type="email" id="Gmail" name="Gmail"></td>
+        </tr>
+       
+        <tr>
+           <td><input type="submit" value="Kayıt işlemi Tamamla" ></td>
+           
+        </tr>
+        <tr>
+            <td> <p><a href="index.html" class="menu">Anasayfaya Dön</a>  <a class="menu" href="">Şehrim</a> <a class="menu" href="hakkimda.html" > Hakkımda</a></p></td>
+        </tr>
+       
+    </form>
+            
+                 
+
+            
+          
+
+
+
+  
+
+
+
+
+    </table>
+    
+>>>>>>> af557d6ac38f8e4ac9a71bd2a8b5c072badcb462
    
 </body>
 </html>
