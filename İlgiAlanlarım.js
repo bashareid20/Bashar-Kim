@@ -1,3 +1,6 @@
+
+// API burada sevdiğim filimlerde kullandım
+
 const apiKey = "f3896f07f041fbf6b8ec9e6eb240c8f7";
 const apiUrl = "https://api.themoviedb.org/3";
 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styleİletisim.css">
+    <style>
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>İletişim</h1>
+        <form action="İletisimBilgiAl1.php" method="post" id="contactForm" @submit="validateForm">
+            <div class="form-group">
+                <label for="ad">Ad</label>
+                <input type="text" class="form-control" name="ad" placeholder="Ad" >
+            </div>
+            <div class="form-group">
+                <label for="soyad">Soyad</label>
+                <input type="text" class="form-control" name="soyad" placeholder="Soyad" >
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta Adresi</label>
+                <input type="text" class="form-control" name="email" placeholder="E-posta Adresi (örn:bashar@gmail.com)" >
+            </div>
+            <div class="form-group">
+                <label for="telefon">Telefon Numarası</label>
+                <input type="text" class="form-control" name="telefon" placeholder="Telefon Numarası(örn:5341233445)" >
+                <small id="telefonError" class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="mesaj">Mesajınız</label>
+                <textarea class="form-control" name="mesaj" placeholder="Mesajınız" ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+            <button type="reset" class="btn btn-secondary">Temizle</button>
+        </form>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <p class="menu2">
+                    <a href="index.html" class="menu">Anasayfaya Dön</a>
+                </p>
+            </td>
+            <td>
+                <a class="menu" href="sehrim.html">ŞEHRİM</a>
+            </td>
+            <td>
+                <a class="menu" href="iletisim.html">İLETİŞİM</a>
+            </td>
+        </tr>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#contactForm',
+            methods: {
+                validateForm(event) {
+                    const ad = this.$el.querySelector('[name="ad"]').value;
+                    const soyad = this.$el.querySelector('[name="soyad"]').value;
+                    const email = this.$el.querySelector('[name="email"]').value;
+                    const telefon = this.$el.querySelector('[name="telefon"]').value;
+                    const mesaj = this.$el.querySelector('[name="mesaj"]').value;
+
+                    if (!ad || !soyad || !email || !telefon || !mesaj) {
+                        event.preventDefault();
+                        alert('Tüm alanları doldurunuz.');
+                    }
+
+                    const telefonRegex = /^\d{10}$/;
+                    if (!telefonRegex.test(telefon)) {
+                        event.preventDefault();
+                        const telefonError = this.$el.querySelector('#telefonError');
+                        telefonError.textContent = 'Geçerli bir telefon numarası giriniz.';
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

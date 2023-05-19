@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logo in</title>
+    <script src="Logoin.js"></script>
     <link rel="stylesheet" href="StyleLogoin.css">
 </head>
 <body>
     <div class="container">
         <h1>Giriş Yap</h1>
-        <form action="LogoinBilgiAl.php" method="post">
+        <form action="LogoinBilgiAl.php" method="post"form id="loginForm" onsubmit="return validateForm()">
             <label for="KullaniciAdi">Kullanıcı Adı</label>
-            <input type="text" id="KullaniciAdi" name="kullanici_Adi" placeholder="G221111111@sakarya.edu.tr">
+            <input type="text" id="KullaniciAdi" name="username" placeholder="G221111111@sakarya.edu.tr">
 
             <label for="sifre">Şifre</label>
-            <input type="password" id="sifre" name="sifre" placeholder="Şifre">
+            <input type="password" id="sifre" name="password" placeholder="Şifre">
 
-<<<<<<< HEAD
             <input type="submit" value="Giriş Yap">
         </form>
+        <p id="message"></p>
     </div>
 <
     <p style="text-align: center;">
@@ -27,13 +28,21 @@
         <a href="" class="menu">Şehrim</a>
         <a href="hakkimda.html" class="menu">Hakkımda</a>
     </p>
-=======
+    <script>
+        function validateForm() {
+            var sifre = document.getElementById('sifre').value;
+            var KullaniciAdi = document.getElementById('KullaniciAdi').value;
+            
+            if (!sifre || !KullaniciAdi ) {
+                alert('Tüm alanları doldurunuz.');
+                return false;
+            
 
-
+            
         
-    </form>
-<p><a href="index.html" class="menu">Anasayfaya Dön</a>  <a class="menu" href="">Şehrim</a> <a class="menu" href="hakkimda.html" > Hakkımda</a></p>
->>>>>>> af557d6ac38f8e4ac9a71bd2a8b5c072badcb462
+            }
+        }
+    </script>
     
 </body>
 </html>

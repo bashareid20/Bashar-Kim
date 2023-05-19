@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,25 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kayıt Ol</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="StyleSingUp.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Kayıt Ol</h1>
-        <form action="BilgiAl.php" method="post">
+        <form id="signupForm" action="BilgiAl.php" method="post">
             <label for="adi">Adı</label>
-            <input type="text" id="adi" name="adi" required>
+            <input type="text" id="adi" name="adi" >
 
             <label for="soyadi">Soyadı</label>
-            <input type="text" id="soyadi" name="soyadi" required>
+            <input type="text" id="soyadi" name="soyadi">
 
             <label for="yas">Doğum Tarihi</label>
-            <input type="date" id="yas" name="yas" min="1900-01-01" max="2007-12-31" required>
-
+            <input type="date" id="yas" name="yas" >
             <label for="Gmail">Gmail</label>
-            <input type="email" id="Gmail" name="Gmail" required>
-
+            <input type="text" id="Gmail" name="Gmail">
+            <label for="telefon">Telefon Numarası</label>
+          <input type="tel" id="telefon" name="telefon" pattern="[0-9]{10}" >
+          <br>
+              <small id="telefonError" class="text-danger"></small>
+        
             <input type="submit" value="Kayıt İşlemini Tamamla">
         </form>
     </div>
@@ -45,68 +49,41 @@
            </td>
         </tr>
       </table>
-=======
-    <link rel="stylesheet" href="SingUp.css">
-</head>
-<body>
-    <form action="BilgiAl.php" method="post" id="myForm" onsubmit="return validateForm()">
-    <table>
-        <tr>
-            <td> <label for="adi">Adı</label> </td>
-            <td> <input type="text" id="adi" name="adi"> </td>   
-            <script>
-                if(adi == ""){
-                    alert("Lütfen Adınızı Yazınız")
-                        return false;
-                }
-            </script>
-        </tr>
-        <tr>
-            <td><label for="soyadi">Soyadı</label> </td>
-            <td><input type="text" id="soyadi" name="soyadi"></td>
-        </tr>
-        <tr>
-            <td><label for="yas">Doğum Tarihi</label> </td>
-            <td><input type="date" id="yas" name="yas" min="14" max="96"></td>
-        </tr>
-        <tr>
-            <td><label for="Gmail">Gmail</label> </td>
-            <td><input type="email" id="Gmail" name="Gmail"></td>
-        </tr>
-        <tr>
-            <td><label for="Gmail">Gmail</label> </td>
-            <td><input type="email" id="Gmail" name="Gmail"></td>
-        </tr>
-        <tr>
-            <td><label for="Gmail">Gmail</label> </td>
-            <td><input type="email" id="Gmail" name="Gmail"></td>
-        </tr>
-       
-        <tr>
-           <td><input type="submit" value="Kayıt işlemi Tamamla" ></td>
-           
-        </tr>
-        <tr>
-            <td> <p><a href="index.html" class="menu">Anasayfaya Dön</a>  <a class="menu" href="">Şehrim</a> <a class="menu" href="hakkimda.html" > Hakkımda</a></p></td>
-        </tr>
-       
-    </form>
-            
-                 
 
-            
-          
+    <script>
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Formun otomatik gönderilmesini engelle
+
+    var adi = document.getElementById('adi').value;
+    var soyadi = document.getElementById('soyadi').value;
+    var yas = document.getElementById('yas').value;
+    var telefon = document.getElementById('telefon').value;
+
+    // Telefon numarası kontrolü yap
+    if (!validatePhoneNumber(telefon)) {
+        alert('Geçerli bir telefon numarası giriniz!');
+        return;
+    }
+
+    // Yaş kontrolü yap
+    if (!validateAge(yas)) {
+        alert('Yaşınız 14 - 114 aralığında olmalıdır!');
+        return;
+    }
+
+    // Formu gönder
+    this.submit();
+});
+
+function validatePhoneNumber(telefon) {
+    // Telefon numarası için regex kullanabilirsiniz
+    // Örnek olarak, Türkiye'deki 10 haneli numara formatı için aşağıdaki regex kullanılabilir
+    var regex = /^[0-9]{10}$/;
+    return regex.test(telefon);
+}
 
 
 
-  
-
-
-
-
-    </table>
-    
->>>>>>> af557d6ac38f8e4ac9a71bd2a8b5c072badcb462
-   
+    </script>
 </body>
 </html>

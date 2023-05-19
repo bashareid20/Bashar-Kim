@@ -1,4 +1,4 @@
-/* MENÜ STİLİ */
+
 .menu {
     display: inline-block;
     padding: 10px 20px;
@@ -111,3 +111,24 @@
 .input {
     width: 300px;
 }
+
+.giris-kayit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ffffff;
+    
+  }
+  
+  .giris-kayit a {
+    color: #8315cc;
+    text-decoration: none;
+    margin-left: 10px;
+text-decoration: none;
+  }
+  
+  .giris-kayit a:hover {
+    text-decoration: underline;
+  }
+  
+    

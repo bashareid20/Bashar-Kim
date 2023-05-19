@@ -1,6 +1,5 @@
 <?php
 echo "<pre>";
-<<<<<<< HEAD
  print_r($_POST);
 if ($_POST["name"]=="bashar") {
     echo"doğru giriş";
@@ -9,10 +8,6 @@ if ($_POST["name"]=="bashar") {
 else {
         echo"yanlış Giriş";
 }
-=======
-print_r($_post);
-
->>>>>>> af557d6ac38f8e4ac9a71bd2a8b5c072badcb462
 
 
 ?>
@@ -28,11 +23,7 @@ print_r($_post);
 <body>
 
 
-<<<<<<< HEAD
 
-=======
-<a href=""></a>
->>>>>>> af557d6ac38f8e4ac9a71bd2a8b5c072badcb462
 
    </body>
    </html>

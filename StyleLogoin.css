@@ -6,7 +6,6 @@ body {
     background-color: #f7f7f7;
 }
 
-<<<<<<< HEAD
 .container {
     max-width: 400px;
     margin: 100px auto;
@@ -71,12 +70,3 @@ input[type="submit"]:hover {
     background-color: crimson;
     color: white;
 }
-=======
-}
-.menu{
-  
-    border-radius: 50px;
-       Border: 3px solid black;
-   }
-  
->>>>>>> af557d6ac38f8e4ac9a71bd2a8b5c072badcb462
