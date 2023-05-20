@@ -85,4 +85,14 @@ body {
     color: #777;
     line-height: 1.5;
   }
-  
+  @media (max-width: 767px) {
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+}

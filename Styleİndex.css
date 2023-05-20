@@ -18,6 +18,7 @@
 
 /* ÜST KISIM STİLİ */
 .ust {
+    
     background-color: #63679c;
     color: #fff;
     height: 80px;
@@ -26,9 +27,11 @@
 }
 
 .ustara {
+    display: inline-block;
+
     background-color: #812626;
     color: #fff;
-    width: 70%;
+    width: 20%;
     padding: 1%;
     float: left;
 }
@@ -96,6 +99,7 @@
 .alt-icerik {
     font-size: 20px;
     font-weight: bold;
+    background-color: #ffcccc;
 }
 
 /* GENEL STİLLER */
@@ -130,5 +134,24 @@ text-decoration: none;
   .giris-kayit a:hover {
     text-decoration: underline;
   }
+  .alt-icerik1 {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
   
-    
+  .alt-icerik1 a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .alt-icerik1 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .alt-icerik1 p {
+    font-size: 16px;
+    color: #666;
+  }

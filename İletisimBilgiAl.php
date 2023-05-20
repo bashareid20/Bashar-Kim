@@ -48,7 +48,7 @@
                     <a class="menu" href="sehrim.html">ŞEHRİM</a>
                 </td>
                 <td>
-                  <a class="menu" href="iletişimVue.js.html">İLETİŞİM </a>
+                  <a class="menu" href="iletişimVue.js.html">İLETİŞİM (Vue.js kullanarak kontrol sağlanan)</a>
               </td>
             </tr>
         </table>
