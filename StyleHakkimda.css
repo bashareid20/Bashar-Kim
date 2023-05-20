@@ -73,4 +73,23 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
+ 
+
+.hobiler-listesi {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hobiler-listesi li {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.hobiler-listesi li img {
+  margin-right: 100px;
+}
+
   
